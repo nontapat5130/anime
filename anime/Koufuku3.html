@@ -1,0 +1,76 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>HelGo Anime</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer@1.25.0/dist/DPlayer.min.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+        .container {
+            max-width: 40rem;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 50px;
+        }
+        h1 {
+            font-size: 54px;
+            color: #333;
+            margin: 30px 0 10px;
+        }
+        h2 {
+            font-size: 22px;
+            color: #555;
+        }
+        h3 {
+            font-size: 24px;
+            color: #555;
+        }
+        hr {
+            display: block;
+            width: 7rem;
+            height: 1px;
+            margin: 2.5rem 0;
+            background-color: #eee;
+            border: 0;
+        }
+        a {
+            color: #08c;
+            text-decoration: none;
+        }
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="dplayer"></div>
+</div>
+<script src="https://nontapat5130.github.io/js/dplayer.js"></script>
+<script>
+    var dp = new DPlayer({
+        element: document.getElementsByClassName('dplayer')[0],
+        autoplay: false,
+        theme: '#00d5ff',
+        loop: true,
+        video: {
+            url: 'https://video.wixstatic.com/video/a5eb64_7282172b85bd4d9a8d8f47892bf310a8/720p/mp4/file.mp4',
+            pic: 'https://relife-anime.com/assets/images/story/01//01.jpg'
+        },
+        danmaku: {
+            id: '9E2E3368B56CDBB4',
+            api: 'https://api.prprpr.me/dplayer/v3/bilibili?aid=%5Baid%5D',
+            token: 'tokendemo',
+            maximum: 1000
+        }
+    });
+    dp.init();
+</script>
+</body>
+</html>
