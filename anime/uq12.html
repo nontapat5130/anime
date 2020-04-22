@@ -1,50 +1,5 @@
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>HELGO</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer@1.25.0/dist/DPlayer.min.css">
-    <style>
-        body {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-       
-    </style>
-</head>
-<body>
-
-    <div class="dplayer"></div>
-</div>
-<script src="https://nontapat5130.github.io/js/dplayer.js"></script>
 <script>
-   var dp = new DPlayer({
-    element: document.getElementById('player1'),
-    screenshot: true,
-      theme: '#ff2142',
-    video: {
-        quality: [{
-            name: '..',
-          url: 'https://content.jwplatform.com/videos/fN8cQdzh-B0t8GU2f.mp4'
-        },{
-            name: '..',
-            url: 'https://content.jwplatform.com/videos/fN8cQdzh-B0t8GU2f.mp4'
-        }],
-        defaultQuality: 1
-    },
-    danmaku: { // Optional, showing danmaku, ignore this option to hide danmaku
-        //id: '9E2E3368B56CDBB4',
-        id: 'jac-animation-net', // Required, danmaku id, NOTICE: it must be unique, can not use these in your new player: `https://api.prprpr.me/dplayer/list`
-        api: 'https://api.prprpr.me/dplayer/', // Required, danmaku api
-        token: 'tokendemo', // Optional, danmaku token for api
-        maximum: 1000, // Optional, maximum quantity of danmaku
-        user: 'DIYgod' // Optional, current user's name, default: 'DIYgod'
-       
-    },
-  contextmenu: []
-});
+<!--
+document.write(unescape("%0A%3C%21DOCTYPE%20html%3E%0A%3Chtml%3E%0A%3Chead%3E%0A%20%20%20%20%3Cmeta%20charset%3D%22UTF-8%22%3E%0A%20%20%20%20%3Ctitle%3EHELGO%3C/title%3E%0A%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice-width%2C%20initial-scale%3D1.0%22%3E%0A%20%20%20%20%3Clink%20rel%3D%22stylesheet%22%20href%3D%22https%3A//cdn.jsdelivr.net/npm/dplayer@1.25.0/dist/DPlayer.min.css%22%3E%0A%20%20%20%20%3Cstyle%3E%0A%20%20%20%20%20%20%20%20body%20%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20font-family%3A%20%27Helvetica%20Neue%27%2C%20Helvetica%2C%20Arial%2C%20sans-serif%3B%0A%20%20%20%20%20%20%20%0A%20%20%20%20%3C/style%3E%0A%3C/head%3E%0A%3Cbody%3E%0A%0A%20%20%20%20%3Cdiv%20class%3D%22dplayer%22%3E%3C/div%3E%0A%3C/div%3E%0A%3Cscript%20src%3D%22https%3A//nontapat5130.github.io/js/dplayer.js%22%3E%3C/script%3E%0A%3Cscript%3E%0A%20%20%20var%20dp%20%3D%20new%20DPlayer%28%7B%0A%20%20%20%20element%3A%20document.getElementById%28%27player1%27%29%2C%0A%20%20%20%20screenshot%3A%20true%2C%0A%20%20%20%20%20%20theme%3A%20%27%23ff2142%27%2C%0A%20%20%20%20video%3A%20%7B%0A%20%20%20%20%20%20%20%20quality%3A%20%5B%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20name%3A%20%27..%27%2C%0A%20%20%20%20%20%20%20%20%20%20url%3A%20%27https%3A//content.jwplatform.com/videos/fN8cQdzh-B0t8GU2f.mp4%27%0A%20%20%20%20%20%20%20%20%7D%2C%7B%0A%20%20%20%20%20%20%20%20%20%20%20%20name%3A%20%27..%27%2C%0A%20%20%20%20%20%20%20%20%20%20%20%20url%3A%20%27https%3A//content.jwplatform.com/videos/fN8cQdzh-B0t8GU2f.mp4%27%0A%20%20%20%20%20%20%20%20%7D%5D%2C%0A%20%20%20%20%20%20%20%20defaultQuality%3A%201%0A%20%20%20%20%7D%2C%0A%20%20%20%20danmaku%3A%20%7B%20//%20Optional%2C%20showing%20danmaku%2C%20ignore%20this%20option%20to%20hide%20danmaku%0A%20%20%20%20%20%20%20%20//id%3A%20%279E2E3368B56CDBB4%27%2C%0A%20%20%20%20%20%20%20%20id%3A%20%27jac-animation-net%27%2C%20//%20Required%2C%20danmaku%20id%2C%20NOTICE%3A%20it%20must%20be%20unique%2C%20can%20not%20use%20these%20in%20your%20new%20player%3A%20%60https%3A//api.prprpr.me/dplayer/list%60%0A%20%20%20%20%20%20%20%20api%3A%20%27https%3A//api.prprpr.me/dplayer/%27%2C%20//%20Required%2C%20danmaku%20api%0A%20%20%20%20%20%20%20%20token%3A%20%27tokendemo%27%2C%20//%20Optional%2C%20danmaku%20token%20for%20api%0A%20%20%20%20%20%20%20%20maximum%3A%201000%2C%20//%20Optional%2C%20maximum%20quantity%20of%20danmaku%0A%20%20%20%20%20%20%20%20user%3A%20%27DIYgod%27%20//%20Optional%2C%20current%20user%27s%20name%2C%20default%3A%20%27DIYgod%27%0A%20%20%20%20%20%20%20%0A%20%20%20%20%7D%2C%0A%20%20contextmenu%3A%20%5B%5D%0A%7D%29%3B%0A%3C/script%3E%0A%3C/body%3E%0A%3C/html%3E%0A%0A%20%20%20"));
+//-->
 </script>
-</body>
-</html>
-
-   
