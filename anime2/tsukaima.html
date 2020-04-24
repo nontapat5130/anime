@@ -51,7 +51,7 @@ playerInstance.setup(
   playerInstance.on('error', function() {
                         playerInstance.remove();
                         console.log('Player Error!');
-                        $('div#player').html('<div align="center" style="width: 100%;height: 400px;background: #eee;color:#000000"><p style="padding-top: 1%"><p><b>มีจำนวนคนดูมากเกินไป แนะนำให้ดูสำรองไปก่อนนะครับ หรือรอสัก 10-20 นาที</b></p></div>');
+                        $('div#player').html('<div align="center" style="width: 100%;height: 400px;background: #eee;color:#000000"><p style="padding-top: 1%"><p><b>มีจำนวนคนดูมากเกินไป</b></p></div>');
                     });
                     playerInstance.on('setupError', function() {
                         playerInstance.remove();
